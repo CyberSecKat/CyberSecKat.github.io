@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <img class="hero__logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">
+    <p class="hero__eyebrow">{{ site.title }}</p>
+    <h1 class="hero__name">{{ site.name }}</h1>
+    <p class="hero__tagline">{{ site.tagline }}</p>
+
+    <div class="hero__actions">
+      <a class="button button--primary" href="{{ '/projects/' | relative_url }}">See my projects</a>
+      <a class="button" href="{{ '/writings/' | relative_url }}">Read my writings</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap home__intro">
+  {{ content }}
+</section>

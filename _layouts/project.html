@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="project wrap">
+  <header class="project__header">
+    <p class="project__meta"><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></p>
+    <h1 class="project__title">{{ page.title }}</h1>
+    {% if page.tags and page.tags.size > 0 %}
+    <ul class="project__tags">
+      {% for tag in page.tags %}<li class="badge">{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if page.github %}
+    <p><a class="button" href="{{ page.github }}" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+    {% endif %}
+  </header>
+
+  <div class="project__content">
+    {{ content }}
+  </div>
+</article>

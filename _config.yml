@@ -1,0 +1,76 @@
+# Site settings
+title: KM Cybersecurity
+name: Kathleen Fell
+tagline: "Detection engineering, security research, and the occasional deep dive."
+description: >-
+  Personal portfolio and writing site for Kathleen Fell — detection engineering
+  projects, security writings, and professional background.
+
+# GitHub Pages serves a *.github.io repo at the domain root, so baseurl stays empty.
+url: "https://cyberseckat.github.io"
+baseurl: ""
+
+logo: /assets/images/KMC_RoundLogo_Color_1024.png
+
+# --- Contact / social — REPLACE THESE PLACEHOLDER VALUES ---
+email: "your.email@example.com"
+social:
+  linkedin: "https://www.linkedin.com/in/REPLACE_ME"
+  bluesky: "https://bsky.app/profile/REPLACE_ME"
+  github: "https://github.com/CyberSecKat"
+
+# --- Primary navigation ---
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Writings
+    url: /writings/
+  - title: Contact
+    url: /contact/
+
+# --- Collections ---
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# Writings (blog posts) live under /writings/
+permalink: /writings/:year/:month/:day/:title/
+
+# --- Build settings ---
+markdown: kramdown
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
