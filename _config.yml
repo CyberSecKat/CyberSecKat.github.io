@@ -11,12 +11,13 @@ url: "https://cyberseckat.github.io"
 baseurl: ""
 
 logo: /assets/images/KMC_RoundLogo_Color_1024.png
+wordmark: "KatMarie"
 
-# --- Contact / social — REPLACE THESE PLACEHOLDER VALUES ---
-email: "your.email@example.com"
+# --- Contact / social ---
+email: "cyberseckat@gmail.com"
 social:
-  linkedin: "https://www.linkedin.com/in/REPLACE_ME"
-  bluesky: "https://bsky.app/profile/REPLACE_ME"
+  linkedin: "https://www.linkedin.com/in/kathleenfell/"
+  bluesky: "https://bsky.app/profile/cyberseckat.bsky.social"
   github: "https://github.com/CyberSecKat"
 
 # --- Primary navigation ---

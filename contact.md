@@ -5,9 +5,6 @@ subtitle: The best ways to reach me.
 permalink: /contact/
 ---
 
-<!-- PLACEHOLDER: update site.email and site.social values in _config.yml
-     with your real contact info — they're pulled in automatically here
-     and in the footer. -->
 <ul class="contact-links">
   <li><a href="mailto:{{ site.email }}">Email — {{ site.email }}</a></li>
   <li><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
